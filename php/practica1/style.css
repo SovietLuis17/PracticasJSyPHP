@@ -1,0 +1,120 @@
+/* RESETEO BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CENTRADO PERFECTO EN EL BODY */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh; /* Alto de toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  padding: 20px;
+}
+
+/* LA SECCIÓN DEL FORMULARIO */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.formulario {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+/* Formato ordenado para los campos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+form input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #28a745; /* Verde para registro */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* EL BOTÓN QUE MUESTRA EL FOOTER */
+.btn-footer {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Azul */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-footer:hover {
+  background-color: #0056b3;
+}
+
+/* OCULTAR EL FOOTER POR DEFECTO */
+.footer {
+  display: none; /* Aquí está el truco: desaparece por completo */
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+/* CLASE ESPECIAL QUE AGREGAREMOS CON JAVASCRIPT */
+.footer.mostrar {
+  display: block; /* Vuelve a ser visible cuando se activa */
+}
+
+.success {
+ background-color: #28a745;
+ color: #333;
+}
+
+.error {
+  width: 200px;
+  padding: 50px;
+  background-color: #d10404;
+}
